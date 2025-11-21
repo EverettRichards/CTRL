@@ -1,8 +1,19 @@
+import SecondaryNav from '../components/SecondaryNav';
+
 const Symposium = () => {
+  const sections = [
+    { id: 'about', label: 'About' },
+    { id: 'opportunities', label: 'Opportunities' },
+    { id: 'who-should-attend', label: 'Who Should Attend' },
+    { id: 'register', label: 'Register' },
+  ];
+
   return (
     <div>
+      <SecondaryNav sections={sections} />
+      
       {/* Hero Section */}
-      <section className="tech-section bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker">
+      <section id="about" className="tech-section bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker">
         <div className="tech-container">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-block mb-6">
@@ -39,7 +50,7 @@ const Symposium = () => {
       </section>
 
       {/* Opportunities Section */}
-      <section className="tech-section bg-tech-dark">
+      <section id="opportunities" className="tech-section bg-tech-dark">
         <div className="tech-container">
           <h2 className="tech-subheading text-center mb-12">Opportunities</h2>
           <div className="tech-grid">
@@ -89,7 +100,7 @@ const Symposium = () => {
       </section>
 
       {/* Who Should Attend */}
-      <section className="tech-section">
+      <section id="who-should-attend" className="tech-section">
         <div className="tech-container">
           <div className="max-w-3xl mx-auto">
             <h2 className="tech-subheading mb-8 text-center">Who Should Attend</h2>
@@ -124,7 +135,7 @@ const Symposium = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="tech-section bg-tech-dark">
+      <section id="register" className="tech-section bg-tech-dark">
         <div className="tech-container">
           <div className="tech-card max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-tech-blue">Join Us at the Symposium</h2>

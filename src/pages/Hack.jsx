@@ -1,8 +1,18 @@
+import SecondaryNav from '../components/SecondaryNav';
+
 const Hack = () => {
+  const sections = [
+    { id: 'about', label: 'About' },
+    { id: 'expect', label: 'What to Expect' },
+    { id: 'register', label: 'Register' },
+  ];
+
   return (
     <div>
+      <SecondaryNav sections={sections} />
+      
       {/* Hero Section */}
-      <section className="tech-section bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker">
+      <section id="about" className="tech-section bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker">
         <div className="tech-container">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-block mb-6">
@@ -39,7 +49,7 @@ const Hack = () => {
       </section>
 
       {/* Features Section */}
-      <section className="tech-section bg-tech-dark">
+      <section id="expect" className="tech-section bg-tech-dark">
         <div className="tech-container">
           <h2 className="tech-subheading text-center mb-12">What to Expect</h2>
           <div className="tech-grid">
@@ -89,7 +99,7 @@ const Hack = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="tech-section">
+      <section id="register" className="tech-section">
         <div className="tech-container">
           <div className="tech-card max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-tech-blue">Ready to Innovate?</h2>

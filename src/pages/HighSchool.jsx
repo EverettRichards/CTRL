@@ -1,8 +1,19 @@
+import SecondaryNav from '../components/SecondaryNav';
+
 const HighSchool = () => {
+  const sections = [
+    { id: 'about', label: 'About' },
+    { id: 'activities', label: 'Activities' },
+    { id: 'why-attend', label: 'Why Attend' },
+    { id: 'contact', label: 'Contact' },
+  ];
+
   return (
     <div>
+      <SecondaryNav sections={sections} />
+      
       {/* Hero Section */}
-      <section className="tech-section bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker">
+      <section id="about" className="tech-section bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker">
         <div className="tech-container">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-block mb-6">
@@ -40,7 +51,7 @@ const HighSchool = () => {
       </section>
 
       {/* Activities Section */}
-      <section className="tech-section bg-tech-dark">
+      <section id="activities" className="tech-section bg-tech-dark">
         <div className="tech-container">
           <h2 className="tech-subheading text-center mb-12">Event Activities</h2>
           <div className="tech-grid">
@@ -90,7 +101,7 @@ const HighSchool = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="tech-section">
+      <section id="why-attend" className="tech-section">
         <div className="tech-container">
           <div className="max-w-3xl mx-auto">
             <h2 className="tech-subheading mb-8 text-center">Why Attend</h2>
@@ -125,7 +136,7 @@ const HighSchool = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="tech-section bg-tech-dark">
+      <section id="contact" className="tech-section bg-tech-dark">
         <div className="tech-container">
           <div className="tech-card max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-tech-blue">Bring Your School</h2>

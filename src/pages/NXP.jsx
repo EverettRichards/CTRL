@@ -1,8 +1,20 @@
+import SecondaryNav from '../components/SecondaryNav';
+
 const NXP = () => {
+  const sections = [
+    { id: 'about', label: 'About' },
+    { id: 'project-areas', label: 'Project Areas' },
+    { id: 'highlights', label: 'Event Highlights' },
+    { id: 'partnership', label: 'Partnership' },
+    { id: 'details', label: 'Details' },
+  ];
+
   return (
     <div>
+      <SecondaryNav sections={sections} />
+      
       {/* Hero Section */}
-      <section className="tech-section bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker">
+      <section id="about" className="tech-section bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker">
         <div className="tech-container">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-block mb-6">
@@ -41,7 +53,7 @@ const NXP = () => {
       </section>
 
       {/* Project Areas Section */}
-      <section className="tech-section bg-tech-dark">
+      <section id="project-areas" className="tech-section bg-tech-dark">
         <div className="tech-container">
           <h2 className="tech-subheading text-center mb-12">Project Areas</h2>
           <div className="tech-grid">
@@ -91,7 +103,7 @@ const NXP = () => {
       </section>
 
       {/* Event Highlights Section */}
-      <section className="tech-section">
+      <section id="highlights" className="tech-section">
         <div className="tech-container">
           <div className="max-w-3xl mx-auto">
             <h2 className="tech-subheading mb-8 text-center">Event Highlights</h2>
@@ -132,7 +144,7 @@ const NXP = () => {
       </section>
 
       {/* Partnership Section */}
-      <section className="tech-section bg-tech-dark">
+      <section id="partnership" className="tech-section bg-tech-dark">
         <div className="tech-container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="tech-subheading mb-6">Industry Partnership</h2>
@@ -150,7 +162,7 @@ const NXP = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="tech-section">
+      <section id="details" className="tech-section">
         <div className="tech-container">
           <div className="tech-card max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-tech-blue">Attend the Showcase</h2>

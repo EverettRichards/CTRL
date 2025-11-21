@@ -1,8 +1,18 @@
+import SecondaryNav from '../components/SecondaryNav';
+
 const Home = () => {
+  const sections = [
+    { id: 'about', label: 'About Us' },
+    { id: 'events', label: 'Events' },
+    { id: 'mission', label: 'Mission' },
+  ];
+
   return (
     <div>
+      <SecondaryNav sections={sections} />
+      
       {/* Hero Section */}
-      <section className="tech-section bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker">
+      <section id="about" className="tech-section bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker">
         <div className="tech-container">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="tech-heading mb-6 animate-pulse-slow">
@@ -24,7 +34,7 @@ const Home = () => {
       </section>
 
       {/* Events Section */}
-      <section className="tech-section">
+      <section id="events" className="tech-section">
         <div className="tech-container">
           <h2 className="tech-subheading text-center mb-12">Our Events</h2>
           <div className="tech-grid">
@@ -84,7 +94,7 @@ const Home = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="tech-section bg-tech-dark">
+      <section id="mission" className="tech-section bg-tech-dark">
         <div className="tech-container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="tech-subheading mb-6">Our Mission</h2>
