@@ -1,8 +1,11 @@
 import SecondaryNav from '../components/SecondaryNav';
+import Slideshow from '../components/Slideshow';
+import { defaultSlides } from '../utils/placeholderImages';
 
 const Home = () => {
   const sections = [
     { id: 'about', label: 'About Us' },
+    { id: 'gallery', label: 'Gallery' },
     { id: 'events', label: 'Events' },
     { id: 'mission', label: 'Mission' },
   ];
@@ -29,6 +32,22 @@ const Home = () => {
                 Learn More
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Slideshow Section */}
+      <section id="gallery" className="tech-section bg-tech-dark">
+        <div className="tech-container">
+          <h2 className="tech-subheading text-center mb-8">Event Gallery</h2>
+          <div className="max-w-6xl mx-auto">
+            <Slideshow 
+              slides={defaultSlides}
+              autoPlayInterval={5000}
+              showControls={true}
+              showIndicators={true}
+              className="h-[400px] md:h-[500px] lg:h-[600px] rounded-xl overflow-hidden shadow-2xl shadow-tech-blue/20 border border-tech-blue/20"
+            />
           </div>
         </div>
       </section>
