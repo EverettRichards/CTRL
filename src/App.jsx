@@ -1,0 +1,25 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import Hack from './pages/Hack';
+import Symposium from './pages/Symposium';
+import HighSchool from './pages/HighSchool';
+import NXP from './pages/NXP';
+
+function App() {
+  return (
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/hack" element={<Hack />} />
+          <Route path="/symposium" element={<Symposium />} />
+          <Route path="/highschool" element={<HighSchool />} />
+          <Route path="/nxp" element={<NXP />} />
+        </Routes>
+      </Layout>
+    </Router>
+  );
+}
+
+export default App;
