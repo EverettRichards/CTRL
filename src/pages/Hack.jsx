@@ -5,6 +5,8 @@ import Prizes from '../components/hackathon/Prizes';
 import Sponsors from '../components/hackathon/Sponsors';
 import Prompt from '../components/hackathon/Prompt';
 import AIPolicy from '../components/hackathon/AIPolicy';
+import Committee from '../components/hackathon/Committee';
+import Registration from '../components/hackathon/Registration';
 import Contact from '../components/hackathon/Contact';
 
 const Hack = () => {
@@ -15,6 +17,8 @@ const Hack = () => {
     { id: 'sponsors', label: 'Sponsors' },
     { id: 'prompt', label: 'Theme & Prompt' },
     { id: 'ai-policy', label: 'GenAI Policy' },
+    { id: 'committee', label: 'Committee' },
+    { id: 'registration', label: 'Registration' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -27,6 +31,8 @@ const Hack = () => {
       <Sponsors />
       <Prompt />
       <AIPolicy />
+      <Committee />
+      <Registration />
       <Contact />
     </div>
   );
