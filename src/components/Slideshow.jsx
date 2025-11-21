@@ -1,5 +1,8 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
+// Transition duration in milliseconds - must match CSS transition duration
+const TRANSITION_DURATION = 500;
+
 /**
  * Slideshow Component - A highly optimized, modular slideshow component
  * 
@@ -48,7 +51,7 @@ const Slideshow = ({
     // Reset transition state after animation completes
     setTimeout(() => {
       setIsTransitioning(false);
-    }, 500); // Match CSS transition duration
+    }, TRANSITION_DURATION);
   }, [currentSlide, isTransitioning]);
 
   // Navigate to next slide
@@ -78,12 +81,20 @@ const Slideshow = ({
     };
   }, [slides.length, isPaused, autoPlayInterval, nextSlide]);
 
-  // Keyboard navigation
+  // Keyboard navigation - only when slideshow container is focused or hovered
   useEffect(() => {
     const handleKeyDown = (e) => {
+      // Only handle keyboard if the slideshow or its children have focus
+      if (!slideContainerRef.current?.contains(document.activeElement) && 
+          !slideContainerRef.current?.matches(':hover')) {
+        return;
+      }
+      
       if (e.key === 'ArrowLeft') {
+        e.preventDefault();
         prevSlide();
       } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
         nextSlide();
       }
     };
@@ -120,9 +131,21 @@ const Slideshow = ({
   useEffect(() => {
     if (slides.length === 0) return;
 
+    const preloadedImages = [];
+    
     const preloadImage = (src) => {
+      if (!src) return;
+      
       const img = new Image();
+      img.onload = () => {
+        // Image loaded successfully
+      };
+      img.onerror = () => {
+        // Silently handle image load errors
+        console.warn(`Failed to preload image: ${src}`);
+      };
       img.src = src;
+      preloadedImages.push(img);
     };
 
     // Preload next and previous images
@@ -131,6 +154,11 @@ const Slideshow = ({
 
     if (slides[nextIndex]?.image) preloadImage(slides[nextIndex].image);
     if (slides[prevIndex]?.image) preloadImage(slides[prevIndex].image);
+    
+    // Cleanup: Clear references when effect re-runs
+    return () => {
+      preloadedImages.length = 0;
+    };
   }, [currentSlide, slides]);
 
   if (!slides || slides.length === 0) {
@@ -154,13 +182,14 @@ const Slideshow = ({
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-all duration-500 ease-in-out ${
+            className={`absolute inset-0 transition-all ease-in-out ${
               index === currentSlide
                 ? 'opacity-100 translate-x-0 z-10'
                 : index < currentSlide
                 ? 'opacity-0 -translate-x-full z-0'
                 : 'opacity-0 translate-x-full z-0'
             }`}
+            style={{ transitionDuration: `${TRANSITION_DURATION}ms` }}
             aria-hidden={index !== currentSlide}
           >
             {/* Image */}
