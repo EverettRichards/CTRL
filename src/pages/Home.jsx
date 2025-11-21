@@ -1,9 +1,13 @@
 import SecondaryNav from '../components/SecondaryNav';
+import Slideshow from '../components/Slideshow';
+import { defaultSlides } from '../utils/placeholderImages';
 
 const Home = () => {
   const sections = [
     { id: 'about', label: 'About Us' },
+    { id: 'gallery', label: 'Gallery' },
     { id: 'events', label: 'Events' },
+    { id: 'officers', label: 'Officers' },
     { id: 'mission', label: 'Mission' },
   ];
 
@@ -29,6 +33,22 @@ const Home = () => {
                 Learn More
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Slideshow Section */}
+      <section id="gallery" className="tech-section bg-tech-dark">
+        <div className="tech-container">
+          <h2 className="tech-subheading text-center mb-8">Event Gallery</h2>
+          <div className="max-w-6xl mx-auto">
+            <Slideshow 
+              slides={defaultSlides}
+              autoPlayInterval={5000}
+              showControls={true}
+              showIndicators={true}
+              className="h-[400px] md:h-[500px] lg:h-[600px] rounded-xl overflow-hidden shadow-2xl shadow-tech-blue/20 border border-tech-blue/20"
+            />
           </div>
         </div>
       </section>
@@ -88,6 +108,129 @@ const Home = () => {
               <a href="/nxp" className="text-tech-blue hover:text-tech-purple transition-colors">
                 Learn More →
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Officers Section */}
+      <section id="officers" className="tech-section">
+        <div className="tech-container">
+          <h2 className="tech-subheading text-center mb-12">Our Team</h2>
+          
+          {/* Executive Officers */}
+          <div className="mb-16">
+            <h3 className="text-xl md:text-2xl font-semibold text-tech-purple mb-8 text-center">Executive Officers</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="tech-card text-center">
+                <div className="w-32 h-32 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-4xl">👤</span>
+                </div>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">President</h4>
+                <p className="text-gray-400">TBD</p>
+              </div>
+              
+              <div className="tech-card text-center">
+                <div className="w-32 h-32 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-4xl">👤</span>
+                </div>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">Vice President</h4>
+                <p className="text-gray-400">TBD</p>
+              </div>
+              
+              <div className="tech-card text-center">
+                <div className="w-32 h-32 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-4xl">👤</span>
+                </div>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">Treasurer</h4>
+                <p className="text-gray-400">TBD</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Events Committee */}
+          <div>
+            <h3 className="text-xl md:text-2xl font-semibold text-tech-purple mb-8 text-center">Events Committee</h3>
+            <div className="tech-grid">
+              <div className="tech-card text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-3xl">👤</span>
+                </div>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">Secretary</h4>
+                <p className="text-gray-400">TBD</p>
+              </div>
+              
+              <div className="tech-card text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-3xl">👤</span>
+                </div>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">Volunteer Coordinator</h4>
+                <p className="text-gray-400">TBD</p>
+              </div>
+              
+              <div className="tech-card text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-3xl">👤</span>
+                </div>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">Event Logistics Coordinator</h4>
+                <p className="text-gray-400">TBD</p>
+              </div>
+              
+              <div className="tech-card text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-3xl">👤</span>
+                </div>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">Industry Outreach Coordinator</h4>
+                <p className="text-gray-400">TBD</p>
+              </div>
+              
+              <div className="tech-card text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-3xl">👤</span>
+                </div>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">Media Director</h4>
+                <p className="text-gray-400">TBD</p>
+              </div>
+              
+              <div className="tech-card text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-3xl">👤</span>
+                </div>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">Webmaster</h4>
+                <p className="text-gray-400">TBD</p>
+              </div>
+              
+              <div className="tech-card text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-3xl">💻</span>
+                </div>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">Hackathon Chair</h4>
+                <p className="text-gray-400">TBD</p>
+              </div>
+              
+              <div className="tech-card text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-3xl">🎯</span>
+                </div>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">Symposium Chair</h4>
+                <p className="text-gray-400">TBD</p>
+              </div>
+              
+              <div className="tech-card text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-3xl">🎓</span>
+                </div>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">High School Chair</h4>
+                <p className="text-gray-400">TBD</p>
+              </div>
+              
+              <div className="tech-card text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-3xl">🔧</span>
+                </div>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">NXP Capstone Chair</h4>
+                <p className="text-gray-400">TBD</p>
+              </div>
             </div>
           </div>
         </div>
