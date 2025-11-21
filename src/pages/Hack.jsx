@@ -96,9 +96,9 @@ const Hack = () => {
             <p className="text-gray-300 mb-6">
               Join us for the next Innovate 4 SDSU Hackathon and be part of something amazing.
             </p>
-            <button className="tech-button">
+            <a href="#register" className="tech-button" aria-label="Register for the hackathon">
               Register Now
-            </button>
+            </a>
           </div>
         </div>
       </section>

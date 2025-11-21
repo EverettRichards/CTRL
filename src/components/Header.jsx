@@ -30,6 +30,7 @@ const Header = () => {
                 key={item.path}
                 to={item.path}
                 className={`tech-nav-link ${location.pathname === item.path ? 'tech-nav-link-active' : ''}`}
+                aria-current={location.pathname === item.path ? 'page' : undefined}
               >
                 {item.label}
               </Link>

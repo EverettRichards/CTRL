@@ -132,9 +132,9 @@ const HighSchool = () => {
             <p className="text-gray-300 mb-6">
               Interested in bringing your high school students to our exposition? Contact us to learn more!
             </p>
-            <button className="tech-button">
+            <a href="#contact" className="tech-button" aria-label="Get more information about the high school exposition">
               Get More Information
-            </button>
+            </a>
           </div>
         </div>
       </section>

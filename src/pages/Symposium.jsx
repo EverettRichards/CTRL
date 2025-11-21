@@ -131,9 +131,9 @@ const Symposium = () => {
             <p className="text-gray-300 mb-6">
               Take the next step in your career journey and connect with industry leaders.
             </p>
-            <button className="tech-button">
+            <a href="#register" className="tech-button" aria-label="Register for the symposium">
               Register for Event
-            </button>
+            </a>
           </div>
         </div>
       </section>

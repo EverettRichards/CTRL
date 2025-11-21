@@ -157,9 +157,9 @@ const NXP = () => {
             <p className="text-gray-300 mb-6">
               Join us to witness the innovative capstone projects from SDSU's brightest engineering students.
             </p>
-            <button className="tech-button">
+            <a href="#details" className="tech-button" aria-label="View NXP Capstone event details">
               Event Details
-            </button>
+            </a>
           </div>
         </div>
       </section>

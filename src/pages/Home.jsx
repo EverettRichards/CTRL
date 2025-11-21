@@ -12,12 +12,12 @@ const Home = () => {
               Empowering the next generation of tech leaders at San Diego State University
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="tech-button">
+              <a href="#join" className="tech-button" aria-label="Join CTRL organization">
                 Join CTRL
-              </button>
-              <button className="tech-button-outline">
+              </a>
+              <a href="#about" className="tech-button-outline" aria-label="Learn more about CTRL">
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
         </div>
