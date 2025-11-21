@@ -5,6 +5,7 @@ const Symposium = () => {
     { id: 'about', label: 'About' },
     { id: 'opportunities', label: 'Opportunities' },
     { id: 'who-should-attend', label: 'Who Should Attend' },
+    { id: 'committee', label: 'Committee' },
     { id: 'register', label: 'Register' },
   ];
 
@@ -129,6 +130,70 @@ const Symposium = () => {
                   Anyone interested in building professional relationships in tech.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Committee Section */}
+      <section id="committee" className="tech-section">
+        <div className="tech-container">
+          <h2 className="tech-subheading text-center mb-12">Symposium Committee</h2>
+          <div className="tech-grid">
+            <div className="tech-card text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-3xl">🎯</span>
+              </div>
+              <h4 className="text-lg font-bold text-tech-blue mb-1">Chair</h4>
+              <p className="text-gray-400">TBD</p>
+            </div>
+            
+            <div className="tech-card text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-3xl">👤</span>
+              </div>
+              <h4 className="text-lg font-bold text-tech-blue mb-1">Secretary</h4>
+              <p className="text-gray-400">TBD</p>
+            </div>
+            
+            <div className="tech-card text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-3xl">👤</span>
+              </div>
+              <h4 className="text-lg font-bold text-tech-blue mb-1">Volunteer Coordinator</h4>
+              <p className="text-gray-400">TBD</p>
+            </div>
+            
+            <div className="tech-card text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-3xl">👤</span>
+              </div>
+              <h4 className="text-lg font-bold text-tech-blue mb-1">Event Logistics Coordinator</h4>
+              <p className="text-gray-400">TBD</p>
+            </div>
+            
+            <div className="tech-card text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-3xl">👤</span>
+              </div>
+              <h4 className="text-lg font-bold text-tech-blue mb-1">Industry Outreach Coordinator</h4>
+              <p className="text-gray-400">TBD</p>
+            </div>
+            
+            <div className="tech-card text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-3xl">👤</span>
+              </div>
+              <h4 className="text-lg font-bold text-tech-blue mb-1">Media Director</h4>
+              <p className="text-gray-400">TBD</p>
+            </div>
+            
+            <div className="tech-card text-center">
+              <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-3xl">👤</span>
+              </div>
+              <h4 className="text-lg font-bold text-tech-blue mb-1">Webmaster</h4>
+              <p className="text-gray-400">TBD</p>
             </div>
           </div>
         </div>
