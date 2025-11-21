@@ -5,10 +5,10 @@ const Header = () => {
   
   const navItems = [
     { path: '/', label: 'Home' },
-    { path: '/hack', label: 'Innovate4SDSU Hackathon' },
+    { path: '/hack', label: 'Hackathon' },
     { path: '/symposium', label: 'Career Symposium' },
-    { path: '/highschool', label: 'High School Exposition' },
-    { path: '/nxp', label: 'NXP Engineering Capstone' },
+    { path: '/highschool', label: 'High School' },
+    { path: '/nxp', label: 'NXP Capstone' },
   ];
   
   return (
