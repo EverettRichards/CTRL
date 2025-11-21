@@ -44,7 +44,7 @@ const Logistics = () => {
           <div className="tech-card">
             <h3 className="text-xl font-bold text-tech-blue mb-3">Food & Drinks</h3>
             <p className="text-gray-300 mb-4">
-              Complementary food, drinks, and snacks will be provided throughout the event. See the{' '}
+              Complimentary food, drinks, and snacks will be provided throughout the event. See the{' '}
               <a 
                 href="/CTRLHackathonScheduleNov2025.pdf" 
                 target="_blank"
