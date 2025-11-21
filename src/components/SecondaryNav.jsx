@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react';
 
+// Constants for header heights
+const MAIN_HEADER_HEIGHT = 73;
+const SECONDARY_HEADER_HEIGHT = 77;
+const SCROLL_OFFSET = MAIN_HEADER_HEIGHT + SECONDARY_HEADER_HEIGHT;
+
 const SecondaryNav = ({ sections }) => {
   const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 150; // Offset for headers
+      const scrollPosition = window.scrollY + SCROLL_OFFSET;
 
       // Find which section is currently in view
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -26,7 +31,7 @@ const SecondaryNav = ({ sections }) => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const yOffset = -120; // Offset for both navbars
+      const yOffset = -(MAIN_HEADER_HEIGHT + SECONDARY_HEADER_HEIGHT + 10);
       const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
@@ -37,7 +42,7 @@ const SecondaryNav = ({ sections }) => {
   }
 
   return (
-    <nav className="bg-tech-dark/60 backdrop-blur-md border-b border-tech-blue/10 sticky top-[73px] z-40">
+    <nav className="bg-tech-dark/60 backdrop-blur-md border-b border-tech-blue/10 sticky z-40" style={{ top: `${MAIN_HEADER_HEIGHT}px` }}>
       <div className="tech-container py-3">
         <div className="flex items-center justify-center gap-1 overflow-x-auto scrollbar-hide">
           {sections.map((section) => (
@@ -49,7 +54,7 @@ const SecondaryNav = ({ sections }) => {
                   ? 'bg-tech-blue/20 text-tech-blue border border-tech-blue/30'
                   : 'text-gray-400 hover:text-tech-blue hover:bg-tech-blue/10'
               }`}
-              aria-current={activeSection === section.id ? 'true' : undefined}
+              aria-current={activeSection === section.id ? 'location' : undefined}
             >
               {section.label}
             </button>
