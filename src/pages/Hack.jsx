@@ -98,17 +98,17 @@ const Hack = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Registration Section */}
       <section id="register" className="tech-section">
         <div className="tech-container">
           <div className="tech-card max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4 text-tech-blue">Ready to Innovate?</h2>
+            <h2 className="text-3xl font-bold mb-4 text-tech-blue">Registration</h2>
             <p className="text-gray-300 mb-6">
-              Join us for the next Innovate 4 SDSU Hackathon and be part of something amazing.
+              Check back in <span className="text-tech-blue font-semibold">February</span> for registration dates and details.
             </p>
-            <a href="#register" className="tech-button" aria-label="Register for the hackathon">
-              Register Now
-            </a>
+            <p className="text-gray-300">
+              The hackathon will take place in <span className="text-tech-purple font-semibold">late March or early April 2026</span>.
+            </p>
           </div>
         </div>
       </section>
