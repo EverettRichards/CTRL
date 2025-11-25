@@ -16,11 +16,11 @@ const Header = () => {
       <nav className="tech-container py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-tech-blue to-tech-purple rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">C</span>
+            <div className="w-20 h-10 bg-gradient-to-br from-tech-blue to-tech-purple rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-xl">CTRL</span>
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent">
-              CTRL
+              SDSU
             </span>
           </Link>
           

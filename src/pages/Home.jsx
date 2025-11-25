@@ -1,6 +1,6 @@
 import SecondaryNav from '../components/SecondaryNav';
 import Slideshow from '../components/Slideshow';
-import { defaultSlides } from '../utils/placeholderImages';
+import { homeSlides } from '../utils/homeSlides';
 
 const Home = () => {
   const sections = [
@@ -43,7 +43,7 @@ const Home = () => {
           <h2 className="tech-subheading text-center mb-8">Event Gallery</h2>
           <div className="max-w-6xl mx-auto">
             <Slideshow 
-              slides={defaultSlides}
+              slides={homeSlides}
               autoPlayInterval={5000}
               showControls={true}
               showIndicators={true}
