@@ -9,6 +9,16 @@ const Sponsors = () => {
           logo: "https://prosperion.us/wp-content/uploads/2017/02/LPL-Financial-Logo-e1488394897806.jpg",
           url: "https://www.lpl.com/"
         },
+        {
+          name: "SDSU Artificial Intelligence (AI) Club",
+          logo: require("../../images/hack25/aiclub_banner.jpg"),
+          url: "https://aiclub.sdsu.edu/"
+        },
+        {
+          name: "SDSU Association for Computing Machinery (ACM)",
+          logo: null,//require("../../images/hack25/acm_banner.jpg"),
+          url: "https://acm.sdsu.edu/"
+        },
       ]
     },
     {
@@ -17,15 +27,30 @@ const Sponsors = () => {
       sponsors: [
         {
           name: "Sony Electronics",
-          logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sony_logo.svg/2560px-Sony_logo.svg.png",
+          logo: null,//require("../../images/hack25/Sony_Logo_K_Nrule-black.jpg"),
           url: "https://www.sony.com/"
         },
+        {
+          name: "Society of American Military Engineers (SAME)",
+          logo: null,//require("../../images/hack25/same.png"),
+          url: "https://same.org/"
+        }
       ]
     },
     {
       level: "Bit Supporters",
       amount: "$250+",
       sponsors: [
+        {
+          name: "Girls Who Code",
+          logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQic3yRLq7DnSa78uICVXLu2Mf5r3NGOgR7A&s",
+          url: "https://www.instagram.com/sdsu.gwc/?hl=en"
+        },
+        {
+          name: "World Computing Organization (WCO)",
+          logo: "https://media.licdn.com/dms/image/v2/D4E0BAQHWLibSwnkGMQ/company-logo_200_200/company-logo_200_200/0/1734993524761/wcosdsu_logo?e=2147483647&v=beta&t=egpTDcruaLsCbt-Fa6Gj9-S-42OHE_TKycTDYCZtHq0",
+          url: "https://worldcomputing.org/",
+        },
         {
           name: "San Diego VR",
           logo: "https://www.sandiegovr.com/_next/image?url=%2Flogo-light.png&w=1080&q=75",
@@ -50,7 +75,7 @@ const Sponsors = () => {
     <section id="sponsors" className="tech-section">
       <div className="tech-container">
         <h2 className="tech-subheading text-center mb-12">Sponsors</h2>
-        
+
         <div className="max-w-5xl mx-auto">
           {sponsorLevels.map((level) => (
             <div key={level.level} className="mb-12">
