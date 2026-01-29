@@ -136,9 +136,14 @@ const Hack = () => {
               </p>
               <div className="space-y-3">
                 <p className="text-gray-400">Want to get involved or have questions?</p>
-                <p className="text-gray-300">
-                  Join our Discord or reach out to <a href="mailto:ctrl@sdsu.edu" className="text-tech-blue hover:underline">ctrl@sdsu.edu</a>
-                </p>
+                <a 
+                  href="https://discord.gg/AebudRt4Ch" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-full hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300"
+                >
+                  💬 Join Our Discord
+                </a>
               </div>
             </div>
           </div>

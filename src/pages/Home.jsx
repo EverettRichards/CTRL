@@ -80,10 +80,10 @@ const Home = () => {
               Empowering the next generation of tech leaders at San Diego State University
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#join" className="tech-button" aria-label="Join CTRL organization">
-                Join CTRL
+              <a href="https://discord.gg/AebudRt4Ch" target="_blank" rel="noopener noreferrer" className="tech-button" aria-label="Join CTRL organization">
+                CTRL Discord Server
               </a>
-              <a href="#about" className="tech-button-outline" aria-label="Learn more about CTRL">
+              <a href="#mission" className="tech-button-outline" aria-label="Learn more about CTRL">
                 Learn More
               </a>
             </div>
