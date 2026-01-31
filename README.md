@@ -15,7 +15,7 @@ This is a modern React.js website built with Vite, React Router, and Tailwind CS
 - **Hackathon** (`/hack`): Information about Innovate 4 SDSU Hackathon
 - **Symposium** (`/symposium`): Details about the CTRL Career Symposium
 - **High School** (`/highschool`): Information about our High School Exposition
-- **NXP** (`/nxp`): Details about the NXP Capstone Event
+- **NXP** (`/nxp`): Details about the NXP Engineering Bootcamp
 
 ## Development
 
@@ -94,7 +94,7 @@ CTRL/
 │   │   ├── Hack.jsx         # Hackathon page
 │   │   ├── Symposium.jsx    # Symposium page
 │   │   ├── HighSchool.jsx   # High School page
-│   │   └── NXP.jsx          # NXP Capstone page
+│   │   └── NXP.jsx          # NXP Bootcamp page
 │   ├── App.jsx              # Main app component with routing
 │   ├── main.jsx             # App entry point
 │   └── index.css            # Global styles and Tailwind config

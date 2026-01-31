@@ -2,7 +2,7 @@ import SecondaryNav from '../components/SecondaryNav';
 
 // Import your images here
 // Example: import hackImage1 from '../images/slideshow/ctrl_screen.png';
-import ctrl_screen from '../images/slideshow/ctrl_screen.png';
+import ctrl_screen from '../images/slideshow/ctrl_screen_cropped.png';
 import hack_team from '../images/slideshow/hack_team.jpg';
 import long_exposure from '../images/slideshow/long_exposure.jpg';
 
@@ -18,18 +18,18 @@ const Hack = () => {
   const galleryImages = [
     {
       image: ctrl_screen, // Use imported image variable here, e.g., hackImage1
-      title: 'Event Kickoff',
-      description: 'Starting the Fall 2025 hackathon'
+      title: 'Leadership & Impact',
+      description: 'Hackathon projects are designed to improve campus life in the SDSU community.'
     },
     {
       image: hack_team,
       title: 'Team Collaboration',
-      description: 'Students working together'
+      description: 'Students team up to develop innovative projects.'
     },
     {
       image: long_exposure,
       title: 'Energy and Innovation',
-      description: 'Capturing the hackathon spirit'
+      description: 'Capturing the excitement of the weekend-long grind.'
     }
   ];
 
@@ -38,7 +38,7 @@ const Hack = () => {
       <SecondaryNav sections={sections} />
       
       {/* Hero Section */}
-      <section id="overview" className="tech-section bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker">
+      <section id="overview" className="tech-section pb-6 pt-12 bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker">
         <div className="tech-container">
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-block mb-6">
@@ -68,9 +68,9 @@ const Hack = () => {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="tech-section">
+      <section id="gallery" className="tech-section pt-6">
         <div className="tech-container">
-          <h2 className="tech-subheading text-center mb-12">Past Hackathons</h2>
+          {/* <h2 className="tech-subheading text-center mb-12">Past Hackathons</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryImages.map((item, index) => (
               <div key={index} className="tech-card overflow-hidden hover:scale-105 transition-transform">

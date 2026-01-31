@@ -6,7 +6,7 @@ const Header = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/hack', label: 'Hackathon' },
-    { path: '/nxp', label: 'NXP Capstone' },
+    { path: '/nxp', label: 'NXP Bootcamp' },
   ];
   
   return (

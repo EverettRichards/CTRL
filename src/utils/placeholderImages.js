@@ -40,8 +40,8 @@ export const defaultSlides = [
   },
   {
     image: generatePlaceholderImage(1920, 800, '#F59E0B', '#8B5CF6', 'Build'),
-    title: 'NXP Capstone Event',
-    description: 'Showcasing senior capstone projects in partnership with industry leaders.',
+    title: 'NXP Engineering Bootcamp',
+    description: 'Showcasing engineering projects in partnership with industry leaders.',
   },
   {
     image: generatePlaceholderImage(1920, 800, '#00D4FF', '#10B981', 'Lead'),
