@@ -8,11 +8,9 @@ import sdsu_logo from "../images/media/nxp_flyer/sdsu_logo.png";
 const NXP = () => {
   const sections = [
     { id: 'about', label: 'About' },
-    { id: 'project-areas', label: 'Project Areas' },
-    { id: 'highlights', label: 'Event Highlights' },
-    { id: 'partnership', label: 'Partnership' },
-    { id: 'committee', label: 'Committee' },
     { id: 'details', label: 'Details' },
+    { id: 'flyer', label: 'Flyer'},
+    { id: 'committee', label: 'Committee' },
   ];
 
   const ctrlLeaders = [
@@ -37,9 +35,19 @@ const NXP = () => {
       image: null
     },
     {
+      name: 'Shelvy Millado',
+      role: 'Officer',
+      image: null,
+    },
+    {
       name: 'Everett Richards',
-      role: 'Webmaster',
+      role: 'Webmaster + CTRL Vice President',
       image: null
+    },
+    {
+      name: "Justin Pelak",
+      role: 'CTRL President',
+      image: null,
     },
     {
       name: 'Manju Muralidharan Priya',
@@ -162,15 +170,13 @@ const NXP = () => {
           </div>
 
           <div className="text-center">
-            <p className="text-gray-300 mb-6">Ready to join the bootcamp?</p>
-            <a 
-              href="https://forms.gle/XC3CyYHt1jxACCWKA" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            {/* <p className="text-gray-300 mb-6">Ready to join the bootcamp?</p> */}
+            <p
               className="inline-block px-8 py-4 bg-gradient-to-r from-tech-blue to-tech-purple text-white font-bold text-lg rounded-lg hover:shadow-lg hover:shadow-tech-blue/50 transition-all duration-300"
             >
-              Apply By February 10th at 11:59PM
-            </a>
+              Application Closed on 2/10/26
+            </p>
+            <p class="mt-8 italic w-3/4 mx-auto">We are no longer accepting applications to the NXP bootcamp. Congratulations to all those who applied and were accepted!</p>
           </div>
 
           </div>
@@ -178,7 +184,7 @@ const NXP = () => {
       </section>
 
       {/* AI Projects Flyer Section */}
-      <section className="tech-section bg-tech-dark">
+      <section id="flyer" className="tech-section bg-tech-dark">
         <style>{`
           :root {
             --bg-dark: #0a0a0f;
@@ -745,8 +751,8 @@ const NXP = () => {
         <div className="tech-container">
           {/* CTRL Student Leaders */}
           <div className="mb-16">
-            <h2 className="tech-subheading text-center mb-12">CTRL Student Leaders</h2>
-            <div className="tech-grid">
+            <h2 className="tech-subheading text-center mb-12">CTRL SDSU Leaders</h2>
+            <div className="tech-grid grid-cols-4">
               {ctrlLeaders.map((leader, index) => (
                 <div key={index} className="tech-card text-center">
                   <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
@@ -770,7 +776,7 @@ const NXP = () => {
           {/* NXP Industry Representatives */}
           <div>
             <h2 className="tech-subheading text-center mb-12">NXP Industry Representatives</h2>
-            <div className="tech-grid">
+            <div className="tech-grid grid-cols-3 mx-auto w-[75%]">
               {nxpRepresentatives.map((rep, index) => (
                 <div key={index} className="tech-card text-center">
                   <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">

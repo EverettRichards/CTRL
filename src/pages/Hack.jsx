@@ -2,9 +2,9 @@ import SecondaryNav from '../components/SecondaryNav';
 
 // Import your images here
 // Example: import hackImage1 from '../images/slideshow/ctrl_screen.png';
-import ctrl_screen from '../images/slideshow/ctrl_screen_cropped.png';
-import hack_team from '../images/slideshow/hack_team.jpg';
-import long_exposure from '../images/slideshow/long_exposure.jpg';
+import ctrl_screen from '../images/slideshow/ctrl_screen_cropped.jpeg';
+import hack_team from '../images/slideshow/hack_team.jpeg';
+import long_exposure from '../images/slideshow/long_exposure.jpeg';
 
 const Hack = () => {
   const sections = [

@@ -1,9 +1,9 @@
-import img1 from "../images/slideshow/ctrl_screen.png";
-import img2 from "../images/slideshow/dabish_mentor.jpg";
-import img3 from "../images/slideshow/hack_team.jpg";
-import img4 from "../images/slideshow/long_exposure.jpg";
-import img5 from "../images/slideshow/prize_table.jpg";
-import img6 from "../images/slideshow/committee_table.jpg"
+import img1 from "../images/slideshow/ctrl_screen.jpeg";
+import img2 from "../images/slideshow/dabish_mentor.jpeg";
+import img3 from "../images/slideshow/hack_team.jpeg";
+import img4 from "../images/slideshow/long_exposure.jpeg";
+import img5 from "../images/slideshow/prize_table.jpeg";
+import img6 from "../images/slideshow/committee_table.jpeg"
 import img7 from "../images/slideshow/trueleaders.jpg"
 
 export const homeSlides = [
