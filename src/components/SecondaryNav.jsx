@@ -1,9 +1,5 @@
 import { useEffect, useState } from 'react';
-
-// Constants for header heights
-const MAIN_HEADER_HEIGHT = 73;
-const SECONDARY_HEADER_HEIGHT = 77;
-const SCROLL_OFFSET = MAIN_HEADER_HEIGHT + SECONDARY_HEADER_HEIGHT;
+import { scrollToSection, SCROLL_OFFSET, MAIN_HEADER_HEIGHT } from '../utils/scrollUtils';
 
 const SecondaryNav = ({ sections }) => {
   const [activeSection, setActiveSection] = useState('');
@@ -27,15 +23,6 @@ const SecondaryNav = ({ sections }) => {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, [sections]);
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const yOffset = -(MAIN_HEADER_HEIGHT + SECONDARY_HEADER_HEIGHT + 10);
-      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-  };
 
   if (!sections || sections.length === 0) {
     return null;

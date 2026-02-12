@@ -1,6 +1,7 @@
 import SecondaryNav from '../components/SecondaryNav';
 import Slideshow from '../components/Slideshow';
 import { homeSlides } from '../utils/homeSlides';
+import { scrollToSection } from '../utils/scrollUtils';
 
 const Home = () => {
   const sections = [
@@ -83,9 +84,9 @@ const Home = () => {
               <a href="https://discord.gg/AebudRt4Ch" target="_blank" rel="noopener noreferrer" className="tech-button" aria-label="Join CTRL organization">
                 CTRL Discord Server
               </a>
-              <a href="#mission" className="tech-button-outline" aria-label="Learn more about CTRL">
+              <button onClick={() => scrollToSection('mission')} className="tech-button-outline" aria-label="Learn more about CTRL">
                 Learn More
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -121,7 +122,7 @@ const Home = () => {
               <p className="text-gray-300 mb-4">
                 Join us for our annual hackathon where students collaborate to build innovative solutions to real-world problems.
               </p>
-              <a href="/hack" className="text-tech-blue hover:text-tech-purple transition-colors">
+              <a href="/#/hack" className="text-tech-blue hover:text-tech-purple transition-colors">
                 Learn More →
               </a>
             </div>
@@ -160,7 +161,7 @@ const Home = () => {
               <p className="text-gray-300 mb-4">
                 Industry-guided engineering bootcamp in partnership with NXP Semiconductors.
               </p>
-              <a href="/nxp" className="text-tech-blue hover:text-tech-purple transition-colors">
+              <a href="/#/nxp" className="text-tech-blue hover:text-tech-purple transition-colors">
                 Learn More →
               </a>
             </div>
