@@ -4,6 +4,7 @@ import img3 from "../images/slideshow/hack_team.jpg";
 import img4 from "../images/slideshow/long_exposure.jpg";
 import img5 from "../images/slideshow/prize_table.jpg";
 import img6 from "../images/slideshow/committee_table.jpg"
+import img7 from "../images/slideshow/trueleaders.jpg"
 
 export const homeSlides = [
   {
@@ -15,6 +16,11 @@ export const homeSlides = [
     image: img2,
     title: 'Bridging Students and Industry',
     description: 'Software engineers and students collaborate to transform ideas into innovation during the Innovate 4 SDSU Hackathon.',
+  },
+  {
+    image: img7,
+    title: "Collaboration Across Disciplines",
+    description: "Student leaders from all walks of life come together for a shared purpose."
   },
   {
     image: img4,
@@ -34,6 +40,6 @@ export const homeSlides = [
   {
     image: img6,
     title: 'Leaders Behind the Vision',
-    description: 'The CTRL committee brings together dedicated students leading the charge toward a stronger tech ecosystem at SDSU.',
+    description: 'CTRL brings together dedicated students leading the charge toward a stronger tech ecosystem at SDSU.',
   },
 ];
