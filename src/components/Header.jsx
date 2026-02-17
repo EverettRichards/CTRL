@@ -7,6 +7,7 @@ const Header = () => {
     { path: '/', label: 'Home' },
     { path: '/hack', label: 'Hackathon' },
     { path: '/nxp', label: 'NXP Bootcamp' },
+    { path: '/icc', label: 'ICC' },
   ];
   
   return (
