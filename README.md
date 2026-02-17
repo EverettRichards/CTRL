@@ -16,6 +16,7 @@ This is a modern React.js website built with Vite, React Router, and Tailwind CS
 - **Symposium** (`/symposium`): Details about the CTRL Career Symposium
 - **High School** (`/highschool`): Information about our High School Exposition
 - **NXP** (`/nxp`): Details about the NXP Engineering Bootcamp
+- **Inter-Club Council** (`/icc`): Information about ICC and affiliated clubs
 
 ## Development
 
@@ -94,7 +95,10 @@ CTRL/
 │   │   ├── Hack.jsx         # Hackathon page
 │   │   ├── Symposium.jsx    # Symposium page
 │   │   ├── HighSchool.jsx   # High School page
-│   │   └── NXP.jsx          # NXP Bootcamp page
+│   │   ├── NXP.jsx          # NXP Bootcamp page
+│   │   └── ICC.jsx          # Inter-Club Council page
+│   ├── utils/
+│   │   └── clubsData.js     # Club information for ICC page
 │   ├── App.jsx              # Main app component with routing
 │   ├── main.jsx             # App entry point
 │   └── index.css            # Global styles and Tailwind config
