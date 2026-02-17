@@ -36,7 +36,7 @@ const NXP = () => {
     },
     {
       name: 'Shelvy Millado',
-      role: 'Officer',
+      role: 'Social Media / PR Chair',
       image: null,
     },
     {

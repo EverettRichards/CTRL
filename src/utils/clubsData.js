@@ -2,44 +2,98 @@
 // This file contains information about all clubs affiliated with CTRL
 // To add/edit a club, modify the clubs array below
 
+import appdev_logo from "../images/club_logos/appdev.png"
+import aiclub_logo from "../images/club_logos/aiclub.jpeg"
+import acm_logo from "../images/club_logos/acm.png"
+
 export const clubs = [
   {
-    name: 'SDSU Computer Science Society',
-    logo: null, // Path to square logo image
+    name: 'App Development Club',
+    logo: appdev_logo, // Path to square logo image
     representative: 'TBD',
-    description: 'The Computer Science Society is dedicated to fostering a community of computer science enthusiasts through workshops, networking events, and technical projects.',
-    meetingTime: 'Wednesdays at 5:00 PM',
-    meetingLocation: 'GMCS 333',
+    description: 'TBD',
+    meetingTime: 'TBD',
+    meetingLocation: 'TBD',
+    website: 'https://appdev.sdsu.edu/',
+    discord: '#'
+  },
+  {
+    name: 'Artificial Intelligence Club',
+    logo: aiclub_logo,
+    representative: 'TBD',
+    description: 'TBD',
+    meetingTime: 'Fridays at 1:00pm',
+    meetingLocation: 'GMCS 422',
+    website: 'https://aiclub.sdsu.edu/',
+    discord: '#'
+  },
+  {
+    name: 'Association for Computing Machinery',
+    logo: acm_logo,
+    representative: 'Shelvy Millado',
+    description: 'The ACM is a vibrant community of tech enthusiasts passionate about innovation, learning, and collaboration. Our mission is to equip students with cutting-edge skills, industry connections, and real-world experience. We host weekly workshops on technical topics, as well as socials and competitions throughout the semester. Open to all majors!',
+    meetingTime: 'Mondays at 3:30pm',
+    meetingLocation: 'GMCS 405',
+    website: 'https://acm.sdsu.edu',
+    discord: 'https://discord.gg/UuNuggpKYV'
+  },
+  {
+    name: 'CyBorg',
+    logo: "",
+    representative: 'TBD',
+    description: 'TBD',
+    meetingTime: 'TBD',
+    meetingLocation: 'TBD',
     website: '#',
     discord: '#'
   },
   {
-    name: 'SDSU Cyber Security Club',
-    logo: null,
-    representative: 'TBD',
-    description: 'The Cyber Security Club provides hands-on experience with cybersecurity concepts, competitions, and industry connections for students interested in information security.',
-    meetingTime: 'Tuesdays at 6:00 PM',
-    meetingLocation: 'GMCS 408',
+    name: 'DataX',
+    logo: "",
+    representative: 'Yesenia Navarro',
+    description: 'TBD',
+    meetingTime: 'TBD',
+    meetingLocation: 'TBD',
     website: '#',
     discord: '#'
   },
   {
-    name: 'Women in Computing',
-    logo: null,
-    representative: 'TBD',
-    description: 'Women in Computing aims to support and empower women and underrepresented groups in technology through mentorship, workshops, and community building.',
-    meetingTime: 'Thursdays at 4:00 PM',
-    meetingLocation: 'GMCS 333',
+    name: 'ELeet Coders',
+    logo: "",
+    representative: 'Aditya Ujawane',
+    description: 'TBD',
+    meetingTime: 'TBD',
+    meetingLocation: 'TBD',
     website: '#',
     discord: '#'
   },
   {
-    name: 'SDSU AI Club',
-    logo: null,
+    name: 'Girls Who Code',
+    logo: "",
+    representative: 'Samantha Manuyag',
+    description: 'TBD',
+    meetingTime: 'TBD',
+    meetingLocation: 'TBD',
+    website: '#',
+    discord: '#'
+  },
+  {
+    name: 'Women in Technology',
+    logo: "",
+    representative: 'Meghan Dang',
+    description: 'TBD',
+    meetingTime: 'TBD',
+    meetingLocation: 'TBD',
+    website: '#',
+    discord: '#'
+  },
+  {
+    name: 'World Computing Organization',
+    logo: "",
     representative: 'TBD',
-    description: 'The AI Club explores artificial intelligence and machine learning through projects, discussions, and collaboration with industry professionals.',
-    meetingTime: 'Mondays at 5:30 PM',
-    meetingLocation: 'GMCS 408',
+    description: 'TBD',
+    meetingTime: 'TBD',
+    meetingLocation: 'TBD',
     website: '#',
     discord: '#'
   },

@@ -31,12 +31,12 @@ const Home = () => {
     },
     {
       name: 'Isabella King',
-      role: 'Hackathon Committee Chair',
+      role: 'CodeBlitz Committee Chair',
       image: null
     },
     {
       name: 'Michael Corn',
-      role: 'NXP Bootcamp  Committee Chair',
+      role: 'NXP Bootcamp Committee Chair',
       image: null
     },
     {
