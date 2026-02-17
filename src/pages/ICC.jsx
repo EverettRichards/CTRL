@@ -36,8 +36,8 @@ const ICC = () => {
         <div className="tech-container">
           <h2 className="tech-subheading text-center mb-12">Affiliated Clubs</h2>
           <div className="tech-grid max-w-6xl mx-auto">
-            {clubs.map((club, index) => (
-              <div key={index} className="tech-card flex flex-col">
+            {clubs.map((club) => (
+              <div key={club.name} className="tech-card flex flex-col">
                 {/* Club Logo */}
                 <div className="w-32 h-32 mx-auto mb-4 rounded-lg overflow-hidden bg-gradient-to-br from-tech-blue to-tech-purple flex items-center justify-center">
                   {club.logo ? (
@@ -83,6 +83,7 @@ const ICC = () => {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="flex-1 text-center py-2 px-3 bg-tech-blue/10 hover:bg-tech-blue/20 text-tech-blue rounded-lg transition-all duration-200 text-sm font-semibold"
+                    aria-label={`Visit ${club.name} website (opens in new tab)`}
                   >
                     🌐 Website
                   </a>
@@ -91,6 +92,7 @@ const ICC = () => {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="flex-1 text-center py-2 px-3 bg-tech-purple/10 hover:bg-tech-purple/20 text-tech-purple rounded-lg transition-all duration-200 text-sm font-semibold"
+                    aria-label={`Join ${club.name} Discord server (opens in new tab)`}
                   >
                     💬 Discord
                   </a>
