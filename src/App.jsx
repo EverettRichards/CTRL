@@ -7,6 +7,7 @@ import Symposium from './pages/Symposium';
 import HighSchool from './pages/HighSchool';
 import NXP from './pages/NXP';
 import ICC from './pages/ICC';
+import CodeBlitz from './pages/CodeBlitz';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/symposium" element={<Symposium />} />
           <Route path="/highschool" element={<HighSchool />} />
           <Route path="/nxp" element={<NXP />} />
+          <Route path="/codeblitz" element={<CodeBlitz />} />
           <Route path="/icc" element={<ICC />} />
         </Routes>
       </Layout>
