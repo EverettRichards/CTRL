@@ -3,6 +3,7 @@ import SecondaryNav from '../components/SecondaryNav'
 import ctrl_logo from '../images/media/nxp_flyer/ctrl_logo.jpg'
 import sdsu_logo from '../images/media/nxp_flyer/sdsu_logo.png'
 import codeblitz_flyer from '../images/flyers/Code_Blitz_Finalized.png'
+import codeblitz_logo from '../images/misc/Code_Blitz.png'
 
 const CodeBlitz = () => {
   const sections = [
@@ -77,9 +78,13 @@ const CodeBlitz = () => {
       >
         <div className="tech-container">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-block mb-6">
-              <div className="w-20 h-20 bg-gradient-to-br from-tech-blue to-tech-purple rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-5xl">⚡</span>
+            <div className="w-full mx-auto mb-4 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+              <div className="w-full h-40 sm:h-48 md:h-56 lg:h-64 overflow-hidden rounded-2xl">
+                <img
+                  src={codeblitz_logo}
+                  alt="Code Blitz logo"
+                  className="w-full h-full object-contain scale-110"
+                />
               </div>
             </div>
             <h1 className="tech-heading mb-6">Code Blitz</h1>

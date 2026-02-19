@@ -1,7 +1,7 @@
-import SecondaryNav from '../components/SecondaryNav';
-import Slideshow from '../components/Slideshow';
-import { homeSlides } from '../utils/homeSlides';
-import { scrollToSection } from '../utils/scrollUtils';
+import SecondaryNav from '../components/SecondaryNav'
+import Slideshow from '../components/Slideshow'
+import { homeSlides } from '../utils/homeSlides'
+import { scrollToSection } from '../utils/scrollUtils'
 
 const Home = () => {
   const sections = [
@@ -10,39 +10,39 @@ const Home = () => {
     { id: 'events', label: 'Events' },
     { id: 'officers', label: 'Officers' },
     { id: 'mission', label: 'Mission' },
-  ];
+  ]
 
   // Executive Officers - Add officer details here
   const executiveOfficers = [
     {
       name: 'Justin Pelak',
       role: 'President',
-      image: null
+      image: null,
     },
     {
       name: 'Everett Richards',
       role: 'Vice President',
-      image: null
+      image: null,
     },
     {
       name: 'Matthew Long',
       role: 'Treasurer',
-      image: null
+      image: null,
     },
     {
       name: 'Isabella King',
       role: 'CodeBlitz Committee Chair',
-      image: null
+      image: null,
     },
     {
       name: 'Michael Corn',
       role: 'NXP Bootcamp Committee Chair',
-      image: null
+      image: null,
     },
     {
       name: 'Manju Muralidharan Priya',
       role: 'Faculty Advisor',
-      image: null
+      image: null,
     },
     // {
     //   name: 'Amelia Grevin',
@@ -64,27 +64,41 @@ const Home = () => {
     //   role: 'Officer',
     //   image: null
     // },
-  ];
+  ]
 
   return (
     <div>
       <SecondaryNav sections={sections} />
-      
+
       {/* Hero Section */}
-      <section id="about" className="tech-section bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker">
+      <section
+        id="about"
+        className="tech-section bg-gradient-to-b from-tech-darker via-tech-dark to-tech-darker"
+      >
         <div className="tech-container">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="tech-heading mb-6 animate-pulse-slow">
               Coalition of Tech Representatives and Leadership
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8">
-              Empowering the next generation of tech leaders at San Diego State University
+              Empowering the next generation of tech leaders at San Diego State
+              University
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://discord.gg/AebudRt4Ch" target="_blank" rel="noopener noreferrer" className="tech-button" aria-label="Join CTRL organization">
+              <a
+                href="https://discord.gg/AebudRt4Ch"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="tech-button"
+                aria-label="Join CTRL organization"
+              >
                 CTRL Discord Server
               </a>
-              <button onClick={() => scrollToSection('mission')} className="tech-button-outline" aria-label="Learn more about CTRL">
+              <button
+                onClick={() => scrollToSection('mission')}
+                className="tech-button-outline"
+                aria-label="Learn more about CTRL"
+              >
                 Learn More
               </button>
             </div>
@@ -97,7 +111,7 @@ const Home = () => {
         <div className="tech-container">
           <h2 className="tech-subheading text-center mb-8">Event Gallery</h2>
           <div className="max-w-6xl mx-auto">
-            <Slideshow 
+            <Slideshow
               slides={homeSlides}
               autoPlayInterval={5000}
               showControls={true}
@@ -113,8 +127,7 @@ const Home = () => {
         <div className="tech-container">
           <h2 className="tech-subheading text-center mb-12">Our Events</h2>
           <div className="tech-grid grid-cols-2 mx-auto lg:w-[80%]">
-
-            <div className="tech-card">
+            {/* <div className="tech-card">
               <div className="w-12 h-12 bg-gradient-to-br from-tech-blue to-tech-purple rounded-lg mb-4 flex items-center justify-center">
                 <span className="text-2xl">💻</span>
               </div>
@@ -125,7 +138,7 @@ const Home = () => {
               <a href="/#/hack" className="text-tech-blue hover:text-tech-purple transition-colors">
                 Learn More →
               </a>
-            </div>
+            </div>*/}
 
             {/* <div className="tech-card">
               <div className="w-12 h-12 bg-gradient-to-br from-tech-blue to-tech-purple rounded-lg mb-4 flex items-center justify-center">
@@ -152,16 +165,40 @@ const Home = () => {
                 Learn More →
               </a>
             </div> */}
+            <div className="tech-card">
+              <div className="w-12 h-12 bg-gradient-to-br from-tech-blue to-tech-purple rounded-lg mb-4 flex items-center justify-center">
+                <span className="text-2xl">💻</span>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-tech-blue">
+                Code Blitz
+              </h3>
+              <p className="text-gray-300 mb-4">
+                Join us for a High Speed Coding Competition where students solve
+                algorithmic challenges in a fun space and win $450 in prizes!
+              </p>
+              <a
+                href="/#/codeblitz"
+                className="text-tech-blue hover:text-tech-purple transition-colors"
+              >
+                Learn More →
+              </a>
+            </div>
 
             <div className="tech-card">
               <div className="w-12 h-12 bg-gradient-to-br from-tech-blue to-tech-purple rounded-lg mb-4 flex items-center justify-center">
                 <span className="text-2xl">🔧</span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-tech-blue">NXP Engineering Bootcamp</h3>
+              <h3 className="text-xl font-bold mb-3 text-tech-blue">
+                NXP Engineering Bootcamp
+              </h3>
               <p className="text-gray-300 mb-4">
-                Industry-guided engineering bootcamp in partnership with NXP Semiconductors.
+                Industry-guided engineering bootcamp in partnership with NXP
+                Semiconductors.
               </p>
-              <a href="/#/nxp" className="text-tech-blue hover:text-tech-purple transition-colors">
+              <a
+                href="/#/nxp"
+                className="text-tech-blue hover:text-tech-purple transition-colors"
+              >
                 Learn More →
               </a>
             </div>
@@ -172,15 +209,17 @@ const Home = () => {
       {/* Officers Section */}
       <section id="officers" className="tech-section">
         <div className="tech-container">
-          <h2 className="tech-subheading text-center mb-12">Executive Officers</h2>
-          
+          <h2 className="tech-subheading text-center mb-12">
+            Executive Officers
+          </h2>
+
           <div className="tech-grid max-w-5xl mx-auto">
             {executiveOfficers.map((officer, index) => (
               <div key={index} className="tech-card text-center">
                 <div className="w-24 h-24 bg-gradient-to-br from-tech-blue to-tech-purple rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
                   {officer.image ? (
-                    <img 
-                      src={officer.image} 
+                    <img
+                      src={officer.image}
                       alt={officer.name}
                       className="w-full h-full object-cover"
                     />
@@ -188,7 +227,9 @@ const Home = () => {
                     <span className="text-3xl">👤</span>
                   )}
                 </div>
-                <h4 className="text-lg font-bold text-tech-blue mb-1">{officer.role}</h4>
+                <h4 className="text-lg font-bold text-tech-blue mb-1">
+                  {officer.role}
+                </h4>
                 <p className="text-gray-200 text-xl">{officer.name}</p>
               </div>
             ))}
@@ -202,16 +243,18 @@ const Home = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="tech-subheading mb-6">Our Mission</h2>
             <p className="text-lg text-gray-300 leading-relaxed">
-              CTRL is dedicated to fostering innovation, leadership, and collaboration within the tech community 
-              at San Diego State University. Through our diverse events and initiatives, we create opportunities 
-              for students to develop their skills, connect with industry professionals, and make a lasting impact 
-              in the world of technology.
+              CTRL is dedicated to fostering innovation, leadership, and
+              collaboration within the tech community at San Diego State
+              University. Through our diverse events and initiatives, we create
+              opportunities for students to develop their skills, connect with
+              industry professionals, and make a lasting impact in the world of
+              technology.
             </p>
           </div>
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
