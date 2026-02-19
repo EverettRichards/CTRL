@@ -92,18 +92,26 @@ const CodeBlitz = () => {
               A high-speed coding competition for teams of up to 3
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <a
+              {/* <a
                 href="https://forms.gle/LUR4Camwt38tjnBP9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-10 py-4 text-lg font-bold text-white rounded-xl bg-gradient-to-r from-tech-purple to-tech-blue shadow-lg shadow-tech-purple/50 hover:scale-105 hover:shadow-tech-blue/70 transition-all duration-300 animate-pulse"
               >
                 Sign up
-              </a>
+              </a> */}
+              <a
+                  href="https://forms.gle/LUR4Camwt38tjnBP9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-12 py-4 text-4xl font-bold text-white rounded-xl bg-gradient-to-r from-tech-purple to-tech-blue shadow-lg shadow-tech-purple/50 hover:scale-105 hover:shadow-tech-blue/70 transition-all duration-300 animate-pulse"
+                >
+                  Sign Up
+                </a>
             </div>
             <p className="text-gray-400 max-w-3xl mx-auto mt-6">
               Hosted by CTRL at San Diego State University. Compete for $450 in
-              prizes.
+              prizes!
             </p>
           </div>
         </div>
@@ -130,7 +138,7 @@ const CodeBlitz = () => {
       </section>
 
       {/* Details Section */}
-      <section id="details" className="tech-section bg-tech-dark">
+      <section id="details" className="tech-section pt-12 bg-tech-dark">
         <div className="tech-container">
           <div className="max-w-3xl mx-auto">
             <h2 className="tech-subheading mb-12 text-center">Event Details</h2>
@@ -139,7 +147,7 @@ const CodeBlitz = () => {
               <div className="tech-card">
                 <h3 className="text-xl font-bold text-tech-blue mb-4">When</h3>
                 <p className="text-gray-300 mb-3">
-                  <span className="font-semibold">Event Date:</span> March 21
+                  <span className="font-semibold">Event Date:</span> Saturday, March 21
                 </p>
                 <p className="text-gray-300">
                   <span className="font-semibold">Time:</span> 9:00am - 1:00pm
@@ -151,12 +159,15 @@ const CodeBlitz = () => {
                 <p className="text-gray-300">
                   <span className="font-semibold">Venue:</span> Templo Mayor
                 </p>
+                <p className="text-gray-400 italic mt-1">
+                  Second floor of the Conrad Prebys Aztec Student Union
+                </p>
               </div>
 
               <div className="tech-card">
                 <h3 className="text-xl font-bold text-tech-blue mb-4">Teams</h3>
                 <p className="text-gray-300 mb-3">
-                  <span className="font-semibold">Team Size:</span> Up to 3
+                  <span className="font-semibold">Team Size:</span> Up to 3 people
                 </p>
                 <p className="text-gray-300">
                   <span className="font-semibold">Capacity:</span> 70
@@ -179,18 +190,21 @@ const CodeBlitz = () => {
             </div>
 
             <div className="text-center">
-              <p className="text-gray-300 mb-3">Sign up window</p>
-              <p className="inline-block px-8 py-4 bg-gradient-to-r from-tech-blue to-tech-purple text-white font-bold text-lg rounded-lg hover:shadow-lg hover:shadow-tech-blue/50 transition-all duration-300">
+              {/* <p className="text-gray-300 mb-3">Sign-up window</p> */}
+              {/* <p className="inline-block px-8 py-4 bg-gradient-to-r from-tech-blue to-tech-purple text-white font-bold text-lg rounded-lg hover:shadow-lg hover:shadow-tech-blue/50 transition-all duration-300">
                 February 23 - March 16
+              </p> */}
+              <p className="inline-block tech-card text-xl">
+                Sign-Up Deadline: <span className="font-semibold">March 16, 2026</span>  at 11:59pm
               </p>
               <div className="mt-6">
                 <a
                   href="https://forms.gle/LUR4Camwt38tjnBP9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-10 py-4 text-lg font-bold text-white rounded-xl bg-gradient-to-r from-tech-purple to-tech-blue shadow-lg shadow-tech-purple/50 hover:scale-105 hover:shadow-tech-blue/70 transition-all duration-300 animate-pulse"
+                  className="inline-block px-12 py-4 text-4xl font-bold text-white rounded-xl bg-gradient-to-r from-tech-purple to-tech-blue shadow-lg shadow-tech-purple/50 hover:scale-105 hover:shadow-tech-blue/70 transition-all duration-300 animate-pulse"
                 >
-                  Sign up
+                  Sign Up
                 </a>
               </div>
             </div>
@@ -203,15 +217,17 @@ const CodeBlitz = () => {
         <div className="tech-container">
           <div className="max-w-5xl mx-auto">
             <h2 className="tech-subheading mb-8 text-center">Flyer</h2>
-            <div className="tech-card p-4 md:p-6">
-              <img
-                src={codeblitz_flyer}
-                alt="Code Blitz flyer"
-                className="w-full h-auto rounded-lg"
-              />
+            <div className="tech-card p-4 md:p-6 lg:h-[75vh] w-auto mx-auto aspect-[12/16]">
+              <a href={codeblitz_flyer} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={codeblitz_flyer}
+                  alt="Code Blitz flyer"
+                  className="w-auto h-full rounded-lg mx-auto"
+                />
+              </a>
             </div>
             <p className="text-gray-400 text-sm text-center mt-4">
-              If the flyer looks blurry, open it in a new tab or zoom in.
+              If the flyer looks blurry, <a href={codeblitz_flyer} target="_blank" rel="noopener noreferrer" className="underline">open it in a new tab</a> or zoom in.
             </p>
           </div>
         </div>
