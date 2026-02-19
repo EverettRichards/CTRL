@@ -1,15 +1,16 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom'
 
 const Header = () => {
-  const location = useLocation();
-  
+  const location = useLocation()
+
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/hack', label: 'Hackathon' },
     { path: '/nxp', label: 'NXP Bootcamp' },
+    { path: '/codeblitz', label: 'CodeBlitz' },
     { path: '/icc', label: 'Inter-Club Council' },
-  ];
-  
+  ]
+
   return (
     <header className="bg-tech-dark/80 backdrop-blur-md border-b border-tech-blue/20 sticky top-0 z-50">
       <nav className="tech-container py-4">
@@ -22,14 +23,16 @@ const Header = () => {
               SDSU
             </span>
           </Link>
-          
+
           <div className="flex space-x-1">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 className={`tech-nav-link ${location.pathname === item.path ? 'tech-nav-link-active' : ''}`}
-                aria-current={location.pathname === item.path ? 'page' : undefined}
+                aria-current={
+                  location.pathname === item.path ? 'page' : undefined
+                }
               >
                 {item.label}
               </Link>
@@ -38,7 +41,7 @@ const Header = () => {
         </div>
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

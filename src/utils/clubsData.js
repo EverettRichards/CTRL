@@ -38,7 +38,7 @@ export const clubs = [
     discord: 'https://discord.gg/UuNuggpKYV'
   },
   {
-    name: 'CyBorg',
+    name: 'Aztec Blockchain Group',
     logo: "",
     representative: 'TBD',
     description: 'TBD',
