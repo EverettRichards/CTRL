@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tech-blue: #00D4FF;
+  --tech-purple: #8B5CF6;
+  --tech-dark: #0A0E27;
+  --tech-darker: #050814;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color: var(--tech-dark);
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .tech-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .tech-heading {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-tech-blue to-tech-purple bg-clip-text text-transparent;
+  }
+  .tech-subheading {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold text-tech-blue;
+  }
+  .tech-card {
+    @apply bg-tech-dark border border-tech-blue/30 rounded-lg p-6 hover:border-tech-blue transition-all duration-300 hover:shadow-lg hover:shadow-tech-blue/20;
+  }
+  .tech-button {
+    @apply bg-gradient-to-r from-tech-blue to-tech-purple text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-tech-purple/50 transition-all duration-300 transform hover:-translate-y-1;
+  }
+  .tech-button-outline {
+    @apply border-2 border-tech-blue text-tech-blue px-6 py-3 rounded-lg font-semibold hover:bg-tech-blue hover:text-tech-dark transition-all duration-300;
+  }
+  .tech-nav-link {
+    @apply text-gray-300 hover:text-tech-blue transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium;
+  }
+  .tech-section {
+    @apply py-16 md:py-24;
+  }
+  .tech-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+  /* CodeBlitz app-specific styles (login / admin / question screens) */
+
+  /* Login */
+  .login-page {
+    @apply min-h-screen flex items-center justify-center py-8 px-4 relative overflow-hidden;
+  }
+  .login-bg-layer {
+    @apply absolute inset-0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .login-bg-pink {
+    animation: login-pulse-pink 4s ease-in-out infinite;
+  }
+  .login-bg-white {
+    animation: login-pulse-white 4s ease-in-out infinite;
+  }
+  .login-content {
+    @apply relative z-10;
+  }
+  @keyframes login-pulse-pink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  @keyframes login-pulse-white {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  .login-box {
+    @apply bg-tech-dark/90 border border-tech-blue/20 rounded-lg p-6 w-full max-w-md shadow-lg;
+  }
+  .login-title {
+    @apply text-2xl font-bold text-center text-tech-blue mb-4;
+  }
+  .login-label {
+    @apply block text-sm text-gray-300 mb-1;
+  }
+  .login-input {
+    @apply w-full px-3 py-2 bg-transparent border border-tech-blue/30 rounded-md text-white placeholder-gray-400 mb-3 focus:outline-none focus:ring-2 focus:ring-tech-blue;
+  }
+  .login-btn-row {
+    @apply flex justify-center mt-4;
+  }
+  .login-btn {
+    @apply bg-gradient-to-r from-tech-purple to-tech-blue text-white px-6 py-2 rounded-md font-semibold hover:scale-105 transition-transform duration-200;
+  }
+  .login-msg {
+    @apply text-sm text-red-400 mt-3 text-center;
+  }
+
+  /* Admin */
+  .admin-page {
+    @apply max-w-6xl mx-auto p-6;
+  }
+  .admin-page-title {
+    @apply text-2xl mb-4;
+  }
+  .admin-section {
+    @apply bg-tech-dark/90 border border-tech-blue/20 rounded-lg p-4 mb-4;
+  }
+  .admin-heading {
+    @apply text-xl font-bold text-tech-blue mb-3;
+  }
+  .admin-primary-btn {
+    @apply bg-gradient-to-r from-tech-purple to-tech-blue text-white px-4 py-2 rounded-md font-semibold shadow;
+  }
+  .admin-secondary-btn {
+    @apply border border-tech-blue/50 text-tech-blue px-4 py-2 rounded-md font-semibold hover:bg-tech-blue/10;
+  }
+  .admin-timer-actions {
+    @apply flex flex-wrap gap-2;
+  }
+  .admin-timer {
+    @apply text-gray-300 mt-2;
+  }
+  .admin-two-col {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+  }
+  .admin-col {
+    @apply min-w-0;
+  }
+  .admin-leaderboard-list {
+    @apply list-none mt-2 space-y-1 p-0;
+  }
+  .admin-leaderboard-row {
+    @apply flex items-center gap-2 py-1.5 border-b border-tech-blue/10;
+  }
+  .admin-leaderboard-rank {
+    @apply text-gray-400 font-mono w-6 shrink-0;
+  }
+  .admin-leaderboard-username {
+    @apply flex-1 font-medium;
+  }
+  .admin-leaderboard-points {
+    @apply text-tech-blue font-semibold;
+  }
+  .admin-refresh-sm {
+    @apply text-sm;
+  }
+  .admin-form {
+    @apply flex items-center gap-2 flex-wrap;
+  }
+  .admin-inline-input {
+    @apply login-input w-auto flex-1 min-w-[120px];
+  }
+  .admin-btn-sm {
+    @apply px-3 py-1 text-sm;
+  }
+  .admin-refresh {
+    @apply inline-flex items-center px-3 py-1 border border-tech-blue/30 text-tech-blue rounded-md hover:bg-tech-blue/10;
+  }
+  .admin-empty {
+    @apply text-gray-400 italic;
+  }
+  .admin-user-list {
+    @apply list-none p-0 mt-2;
+  }
+  .admin-user-row {
+    @apply flex justify-between items-center py-2 border-b border-tech-blue/10;
+  }
+  .admin-delete-btn {
+    @apply text-sm text-red-400 bg-transparent px-2 py-1 rounded hover:bg-red-600/10;
+  }
+  .admin-clear-btn {
+    @apply inline-flex items-center border border-red-500 text-red-400 px-3 py-2 rounded-md;
+  }
+  .admin-clear-btn-confirm {
+    @apply inline-flex items-center bg-red-600 text-white px-3 py-2 rounded-md;
+  }
+  .admin-header-row {
+    @apply flex items-center justify-between gap-4 mb-4 flex-wrap;
+  }
+  .admin-logout-inline {
+    @apply shrink-0 bg-tech-blue text-tech-dark px-3 py-2 rounded-md font-semibold hover:opacity-90;
+  }
+
+  /* Question / Contest UI */
+  .question-page {
+    @apply max-w-6xl mx-auto p-6;
+  }
+  .question-top-bar {
+    @apply flex justify-between items-center mb-4;
+  }
+  .question-top-text {
+    @apply text-sm text-gray-300;
+  }
+  .question-lang-select {
+    @apply bg-tech-dark border border-tech-blue/30 rounded px-2 py-1 text-white text-sm focus:outline-none focus:ring-2 focus:ring-tech-blue;
+  }
+  .question-prompt {
+    @apply bg-tech-dark/80 border border-tech-blue/20 rounded p-3 mb-4 text-gray-200;
+  }
+  .question-run-row {
+    @apply mb-3;
+  }
+  .question-run-btn {
+    @apply h-7 px-3 text-white text-xs font-semibold flex items-center justify-center gap-1 shadow rounded border border-red-400/50;
+    background-color: #c53030;
+    min-width: 4rem;
+  }
+  .question-run-btn:not(.run-disabled):hover {
+    background-color: #9b2c2c;
+  }
+  .run-disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+  .question-main {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+  }
+  .question-editor {
+    @apply bg-black/80 text-green-200 font-mono p-4 rounded min-h-[300px] w-full resize-none outline-none;
+  }
+  .question-output-wrap {
+    @apply bg-black/70 p-3 rounded min-h-[300px] overflow-auto;
+  }
+  .question-output {
+    @apply text-sm whitespace-pre-wrap;
+  }
+  .question-footer {
+    @apply mt-6 pt-4 border-t border-tech-blue/20 text-center;
+  }
+  .question-logout-link {
+    @apply bg-transparent border-0 text-tech-blue text-sm underline hover:no-underline cursor-pointer;
+  }
+}
