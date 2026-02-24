@@ -2,13 +2,14 @@ import SecondaryNav from '../components/SecondaryNav'
 
 import ctrl_logo from '../images/media/nxp_flyer/ctrl_logo.jpg'
 import sdsu_logo from '../images/media/nxp_flyer/sdsu_logo.png'
-import codeblitz_flyer from '../images/flyers/Code_Blitz_Finalized.png'
+import codeblitz_flyer from '../images/flyers/CodeBlitz_wSouthweatern_Advantage_Finalized.png'
 import codeblitz_logo from '../images/misc/Code_Blitz.png'
 
 const CodeBlitz = () => {
   const sections = [
     { id: 'about', label: 'About' },
     { id: 'details', label: 'Details' },
+    { id: 'ai-policy', label: 'AI Policy' },
     { id: 'flyer', label: 'Flyer' },
     { id: 'committee', label: 'Committee' },
   ]
@@ -199,6 +200,20 @@ const CodeBlitz = () => {
                   Sign Up
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Policy Section */}
+      <section id="ai-policy" className="py-6 md:py-8 bg-tech-dark">
+        <div className="tech-container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="tech-subheading mb-6 text-center">AI Policy</h2>
+            <div className="tech-card text-center">
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Use of any AI or large language model (LLM) such as ChatGPT, Claude, Grok, etc. are strictly prohibited! Teams caught using an LLM during the coding competition will be disqualified.
+              </p>
             </div>
           </div>
         </div>
