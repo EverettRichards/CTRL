@@ -8,6 +8,9 @@ import HighSchool from './pages/HighSchool';
 import NXP from './pages/NXP';
 import ICC from './pages/ICC';
 import CodeBlitz from './pages/CodeBlitz';
+import LoginScreen from './codeBlitz/frontend/LoginScreen';
+import AdminScreen from './codeBlitz/frontend/AdminScreen';
+import QuestionScreen from './codeBlitz/frontend/QuestionScreen';
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
           <Route path="/highschool" element={<HighSchool />} />
           <Route path="/nxp" element={<NXP />} />
           <Route path="/codeblitz" element={<CodeBlitz />} />
+          <Route path="/login" element={<LoginScreen />} />
+          <Route path="/admin" element={<AdminScreen />} />
+          <Route path="/question" element={<QuestionScreen />} />
           <Route path="/icc" element={<ICC />} />
         </Routes>
       </Layout>

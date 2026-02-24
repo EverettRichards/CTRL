@@ -2,13 +2,14 @@ import SecondaryNav from '../components/SecondaryNav'
 
 import ctrl_logo from '../images/media/nxp_flyer/ctrl_logo.jpg'
 import sdsu_logo from '../images/media/nxp_flyer/sdsu_logo.png'
-import codeblitz_flyer from '../images/flyers/Code_Blitz_Finalized.png'
+import codeblitz_flyer from '../images/flyers/CodeBlitz_wSouthweatern_Advantage_Finalized.png'
 import codeblitz_logo from '../images/misc/Code_Blitz.png'
 
 const CodeBlitz = () => {
   const sections = [
     { id: 'about', label: 'About' },
     { id: 'details', label: 'Details' },
+    { id: 'ai-policy', label: 'AI Policy' },
     { id: 'flyer', label: 'Flyer' },
     { id: 'committee', label: 'Committee' },
   ]
@@ -69,7 +70,7 @@ const CodeBlitz = () => {
 
   return (
     <div>
-      <SecondaryNav sections={sections} />
+      <SecondaryNav sections={sections} showLogin />
 
       {/* Hero Section */}
       <section
@@ -87,27 +88,19 @@ const CodeBlitz = () => {
                 />
               </div>
             </div>
-            <h1 className="tech-heading mb-6">Code Blitz</h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8">
+           
+            <p className="text-xl md:text-xl text-gray-300 mb-8">
               A high-speed coding competition for teams of up to 3
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              {/* <a
+              <a
                 href="https://forms.gle/LUR4Camwt38tjnBP9"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-10 py-4 text-lg font-bold text-white rounded-xl bg-gradient-to-r from-tech-purple to-tech-blue shadow-lg shadow-tech-purple/50 hover:scale-105 hover:shadow-tech-blue/70 transition-all duration-300 animate-pulse"
+                className="inline-block px-6 py-2 text-lg font-bold text-white rounded-xl bg-gradient-to-r from-tech-purple to-tech-blue shadow-lg shadow-tech-purple/50 hover:scale-105 hover:shadow-tech-blue/70 transition-all duration-300 animate-pulse"
               >
-                Sign up
-              </a> */}
-              <a
-                  href="https://forms.gle/LUR4Camwt38tjnBP9"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-12 py-4 text-4xl font-bold text-white rounded-xl bg-gradient-to-r from-tech-purple to-tech-blue shadow-lg shadow-tech-purple/50 hover:scale-105 hover:shadow-tech-blue/70 transition-all duration-300 animate-pulse"
-                >
-                  Sign Up
-                </a>
+                Sign Up
+              </a>
             </div>
             <p className="text-gray-400 max-w-3xl mx-auto mt-6">
               Hosted by CTRL at San Diego State University. Compete for $450 in
@@ -120,7 +113,7 @@ const CodeBlitz = () => {
       {/* About Section */}
       <section className="tech-section">
         <div className="tech-container">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
             <h2 className="tech-subheading mb-8">About Code Blitz</h2>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
               Join us for a high-speed coding competition where groups of up to
@@ -202,11 +195,25 @@ const CodeBlitz = () => {
                   href="https://forms.gle/LUR4Camwt38tjnBP9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-12 py-4 text-4xl font-bold text-white rounded-xl bg-gradient-to-r from-tech-purple to-tech-blue shadow-lg shadow-tech-purple/50 hover:scale-105 hover:shadow-tech-blue/70 transition-all duration-300 animate-pulse"
+                  className="inline-block px-6 py-2 text-lg font-bold text-white rounded-xl bg-gradient-to-r from-tech-purple to-tech-blue shadow-lg shadow-tech-purple/50 hover:scale-105 hover:shadow-tech-blue/70 transition-all duration-300 animate-pulse"
                 >
                   Sign Up
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Policy Section */}
+      <section id="ai-policy" className="py-6 md:py-8 bg-tech-dark">
+        <div className="tech-container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="tech-subheading mb-6 text-center">AI Policy</h2>
+            <div className="tech-card text-center">
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Use of any AI or large language model (LLM) such as ChatGPT, Claude, Grok, etc. are strictly prohibited! Teams caught using an LLM during the coding competition will be disqualified.
+              </p>
             </div>
           </div>
         </div>

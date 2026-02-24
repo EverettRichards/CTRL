@@ -77,7 +77,7 @@ const Home = () => {
       >
         <div className="tech-container">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="tech-heading mb-6 animate-pulse-slow">
+            <h1 className="tech-heading text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 animate-pulse-slow">
               Coalition of Tech Representatives and Leadership
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8">
