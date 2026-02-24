@@ -70,7 +70,7 @@ const CodeBlitz = () => {
 
   return (
     <div>
-      <SecondaryNav sections={sections} showLogin />
+      <SecondaryNav sections={sections} />
 
       {/* Hero Section */}
       <section
