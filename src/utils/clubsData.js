@@ -20,12 +20,12 @@ export const clubs = [
   {
     name: 'Artificial Intelligence Club',
     logo: aiclub_logo,
-    representative: 'TBD',
+    representative: 'Justin Pelak',
     description: 'TBD',
     meetingTime: 'Fridays at 1:00pm',
     meetingLocation: 'GMCS 422',
     website: 'https://aiclub.sdsu.edu/',
-    discord: '#'
+    discord: 'https://discord.gg/aETuTwPR68'
   },
   {
     name: 'Association for Computing Machinery',
