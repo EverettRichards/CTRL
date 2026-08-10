@@ -15,23 +15,34 @@ const Home = () => {
   // Executive Officers - Add officer details here
   const executiveOfficers = [
     {
-      name: 'Justin Pelak',
-      role: 'President',
+      name: 'Patricia Alfonso',
+      role: ' CTRL/ACM President',
       image: null,
     },
     {
       name: 'Everett Richards',
-      role: 'Vice President',
+      role: 'CTRL/ACM Vice President',
       image: null,
     },
     {
-      name: 'Matthew Long',
-      role: 'Treasurer',
+      name: 'Myna Sharma',
+      role: 'CTRL Committee Chair',
       image: null,
+
+    },
+    {
+     name: 'Safa Al Khaliefah',
+     role: 'CTRL Committee Vice Chair',
+     image: null,
     },
     {
       name: 'Isabella King',
       role: 'CodeBlitz Committee Chair',
+      image: null,
+    },
+    {
+      name: 'Aadi Bery',
+      role: 'SDSU AI Club President',
       image: null,
     },
     {
@@ -42,6 +53,11 @@ const Home = () => {
     {
       name: 'Manju Muralidharan Priya',
       role: 'Faculty Advisor',
+      image: null,
+    },
+     {
+      name: 'Matthew Long',
+      role: 'Treasurer',
       image: null,
     },
     // {
