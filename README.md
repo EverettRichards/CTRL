@@ -45,7 +45,7 @@ The website will be available at `http://localhost:5173/`
 npm run build
 ```
 
-The built files will be in the `dist` directory.
+The built files will be in the `dist` directory. Additionally, a `current_build.zip` file will be automatically created in the root directory, containing the production build ready for deployment.
 
 ### Preview Production Build
 
@@ -53,12 +53,22 @@ The built files will be in the `dist` directory.
 npm run preview
 ```
 
+### Build Scripts
+
+The project includes an automatic build packaging script:
+
+- **`scripts/zip-build.js`**: Automatically runs after `npm run build` to create `current_build.zip`
+- This zip file contains the complete production build (`index.html` and `assets/` directory)
+- The script uses the `archiver` package to create optimized zip archives
+- Useful for easy deployment and distribution of the built website
+
 ## Technology Stack
 
 - **React 18**: Modern UI library
 - **Vite**: Fast build tool and dev server
 - **React Router**: Client-side routing
 - **Tailwind CSS**: Utility-first CSS framework
+- **Archiver**: Package for creating zip archives of production builds
 
 ## Design System
 
@@ -102,6 +112,8 @@ CTRL/
 │   ├── App.jsx              # Main app component with routing
 │   ├── main.jsx             # App entry point
 │   └── index.css            # Global styles and Tailwind config
+├── scripts/
+│   └── zip-build.js         # Post-build script to create zip archive
 ├── index.html               # HTML template
 ├── vite.config.js           # Vite configuration
 ├── tailwind.config.js       # Tailwind configuration
